@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { useAuth } from "../context/AuthContext";
 
-import LoginScreen from "../screens/auth/LoginScreen";
+/*import LoginScreen from "../screens/auth/LoginScreen";
 import RegisterScreen from "../screens/auth/RegisterScreen";
 
 import HomeScreen from "../screens/main/HomeScreen";
@@ -20,6 +20,7 @@ import AdminDashboardScreen from "../screens/admin/AdminDashboardScreen";
 import ManageFoodScreen from "../screens/admin/ManageFoodScreen";
 import RestaurantInfoScreen from "../screens/admin/RestaurantInfoScreen";
 import OrderHistoryScreen from "../screens/admin/OrderHistoryScreen";
+*/
 
 export type RootStackParamList = {
   Auth: undefined;
@@ -38,7 +39,7 @@ export type RootStackParamList = {
 const Stack = createNativeStackNavigator<RootStackParamList>();
 const Tabs = createBottomTabNavigator();
 
-function MainTabs() {
+/*function MainTabs() {
   return (
     <Tabs.Navigator screenOptions={{ headerShown: false }}>
       <Tabs.Screen name="Home" component={HomeScreen} />
@@ -83,3 +84,4 @@ export default function AppNavigator() {
     </NavigationContainer>
   );
 }
+*/  
