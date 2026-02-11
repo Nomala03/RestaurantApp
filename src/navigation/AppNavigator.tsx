@@ -4,7 +4,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { useAuth } from "../context/AuthContext";
 
-/*import LoginScreen from "../screens/auth/LoginScreen";
+/*
+import LoginScreen from "../screens/auth/LoginScreen";
 import RegisterScreen from "../screens/auth/RegisterScreen";
 
 import HomeScreen from "../screens/main/HomeScreen";
@@ -20,11 +21,11 @@ import AdminDashboardScreen from "../screens/admin/AdminDashboardScreen";
 import ManageFoodScreen from "../screens/admin/ManageFoodScreen";
 import RestaurantInfoScreen from "../screens/admin/RestaurantInfoScreen";
 import OrderHistoryScreen from "../screens/admin/OrderHistoryScreen";
-*/
 
 export type RootStackParamList = {
   Auth: undefined;
   Main: undefined;
+
   ItemDetails: { menuItemId: string };
   EditCartItem: { cartItemId: string };
   Checkout: undefined;
@@ -38,8 +39,9 @@ export type RootStackParamList = {
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 const Tabs = createBottomTabNavigator();
+const AuthStackNav = createNativeStackNavigator();
 
-/*function MainTabs() {
+function MainTabs() {
   return (
     <Tabs.Navigator screenOptions={{ headerShown: false }}>
       <Tabs.Screen name="Home" component={HomeScreen} />
@@ -51,25 +53,27 @@ const Tabs = createBottomTabNavigator();
 }
 
 function AuthStack() {
-  const A = createNativeStackNavigator();
   return (
-    <A.Navigator>
-      <A.Screen name="Login" component={LoginScreen} />
-      <A.Screen name="Register" component={RegisterScreen} />
-    </A.Navigator>
+    <AuthStackNav.Navigator>
+      <AuthStackNav.Screen name="Login" component={LoginScreen} />
+      <AuthStackNav.Screen name="Register" component={RegisterScreen} />
+    </AuthStackNav.Navigator>
   );
 }
 
 export default function AppNavigator() {
-  const { loading } = useAuth();
+  const { user, loading } = useAuth();
 
   if (loading) return null;
 
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Auth" component={AuthStack} options={{ headerShown: false }} />
-        <Stack.Screen name="Main" component={MainTabs} options={{ headerShown: false }} />
+        {!user ? (
+          <Stack.Screen name="Auth" component={AuthStack} options={{ headerShown: false }} />
+        ) : (
+          <Stack.Screen name="Main" component={MainTabs} options={{ headerShown: false }} />
+        )}
 
         <Stack.Screen name="ItemDetails" component={ItemDetailsScreen} options={{ title: "View Item" }} />
         <Stack.Screen name="EditCartItem" component={EditCartItemScreen} options={{ title: "Edit Item" }} />
@@ -84,4 +88,5 @@ export default function AppNavigator() {
     </NavigationContainer>
   );
 }
+
 */  
