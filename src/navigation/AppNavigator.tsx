@@ -6,9 +6,9 @@ import { useAuth } from "../context/AuthContext";
 
 import LoginScreen from "../screens/auth/LoginScreen";
 import RegisterScreen from "../screens/auth/RegisterScreen";
-/*
-
 import HomeScreen from "../screens/main/HomeScreen";
+
+/*
 import ItemDetailsScreen from "../screens/main/ItemDetailsScreen";
 import CartScreen from "../screens/main/CartScreen";
 import EditCartItemScreen from "../screens/main/EditCartItemScreen";
@@ -41,18 +41,17 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const Tabs = createBottomTabNavigator();
 const AuthStackNav = createNativeStackNavigator();
 
-/*function MainTabs() {
+function MainTabs() {
   return (
     <Tabs.Navigator screenOptions={{ headerShown: false }}>
       <Tabs.Screen name="Home" component={HomeScreen} />
-      <Tabs.Screen name="Cart" component={CartScreen} />
+      {/*<Tabs.Screen name="Cart" component={CartScreen} />
       <Tabs.Screen name="Orders" component={OrdersScreen} />
-      <Tabs.Screen name="Profile" component={ProfileScreen} />
+      <Tabs.Screen name="Profile" component={ProfileScreen} />*/}
     </Tabs.Navigator>
   );
 }
 
-*/
 function AuthStack() {
   return (
     <AuthStackNav.Navigator>
