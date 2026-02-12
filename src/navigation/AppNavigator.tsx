@@ -9,10 +9,10 @@ import RegisterScreen from "../screens/auth/RegisterScreen";
 import HomeScreen from "../screens/main/HomeScreen";
 import ItemDetailsScreen from "../screens/main/ItemDetailsScreen";
 import CartScreen from "../screens/main/CartScreen";
-
+import EditCartItemScreen from "../screens/main/EditCartItemScreen";
 
 /*
-import EditCartItemScreen from "../screens/main/EditCartItemScreen";
+
 import CheckoutScreen from "../screens/main/CheckoutScreen";
 import OrdersScreen from "../screens/main/OrdersScreen";
 import ProfileScreen from "../screens/main/ProfileScreen";
@@ -88,9 +88,9 @@ export default function AppNavigator() {
           component={ItemDetailsScreen}
           options={{ title: "View Item" }}
         />
-
-        {/* 
         <Stack.Screen name="EditCartItem" component={EditCartItemScreen} options={{ title: "Edit Item" }} />
+        {/* 
+        
         <Stack.Screen name="Checkout" component={CheckoutScreen} options={{ title: "Checkout" }} />
 
         <Stack.Screen name="AdminAuth" component={AdminLoginScreen} options={{ title: "Admin Login" }} />
