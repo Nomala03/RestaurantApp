@@ -7,9 +7,9 @@ import { useAuth } from "../context/AuthContext";
 import LoginScreen from "../screens/auth/LoginScreen";
 import RegisterScreen from "../screens/auth/RegisterScreen";
 import HomeScreen from "../screens/main/HomeScreen";
+import ItemDetailsScreen from "../screens/main/ItemDetailsScreen";
 
 /*
-import ItemDetailsScreen from "../screens/main/ItemDetailsScreen";
 import CartScreen from "../screens/main/CartScreen";
 import EditCartItemScreen from "../screens/main/EditCartItemScreen";
 import CheckoutScreen from "../screens/main/CheckoutScreen";
@@ -69,12 +69,25 @@ export default function AppNavigator() {
     <NavigationContainer>
       <Stack.Navigator>
         {!user ? (
-          <Stack.Screen name="Auth" component={AuthStack} options={{ headerShown: false }} />
+          <Stack.Screen
+            name="Auth"
+            component={AuthStack}
+            options={{ headerShown: false }}
+          />
         ) : (
-          <Stack.Screen name="Main" component={MainTabs} options={{ headerShown: false }} />
+          <Stack.Screen
+            name="Main"
+            component={MainTabs}
+            options={{ headerShown: false }}
+          />
         )}
+        <Stack.Screen
+          name="ItemDetails"
+          component={ItemDetailsScreen}
+          options={{ title: "View Item" }}
+        />
 
-       {/* <Stack.Screen name="ItemDetails" component={ItemDetailsScreen} options={{ title: "View Item" }} />
+        {/* 
         <Stack.Screen name="EditCartItem" component={EditCartItemScreen} options={{ title: "Edit Item" }} />
         <Stack.Screen name="Checkout" component={CheckoutScreen} options={{ title: "Checkout" }} />
 
@@ -87,5 +100,3 @@ export default function AppNavigator() {
     </NavigationContainer>
   );
 }
- 
-  
