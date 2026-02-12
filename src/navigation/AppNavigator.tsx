@@ -13,9 +13,9 @@ import EditCartItemScreen from "../screens/main/EditCartItemScreen";
 import CheckoutScreen from "../screens/main/CheckoutScreen";
 import OrdersScreen from "../screens/main/OrdersScreen";
 import ProfileScreen from "../screens/main/ProfileScreen";
+import AdminLoginScreen from "../screens/admin/AdminLoginScreen";
 
 /*
-import AdminLoginScreen from "../screens/admin/AdminLoginScreen";
 import AdminDashboardScreen from "../screens/admin/AdminDashboardScreen";
 import ManageFoodScreen from "../screens/admin/ManageFoodScreen";
 import RestaurantInfoScreen from "../screens/admin/RestaurantInfoScreen";
@@ -87,9 +87,9 @@ export default function AppNavigator() {
         />
         <Stack.Screen name="EditCartItem" component={EditCartItemScreen} options={{ title: "Edit Item" }} />
         <Stack.Screen name="Checkout" component={CheckoutScreen} options={{ title: "Checkout" }} />
-
+<Stack.Screen name="AdminAuth" component={AdminLoginScreen} options={{ title: "Admin Login" }} />
         {/* 
-        <Stack.Screen name="AdminAuth" component={AdminLoginScreen} options={{ title: "Admin Login" }} />
+        
         <Stack.Screen name="Admin" component={AdminDashboardScreen} options={{ title: "Admin Dashboard" }} />
         <Stack.Screen name="ManageFood" component={ManageFoodScreen} options={{ title: "Manage Food" }} />
         <Stack.Screen name="RestaurantInfo" component={RestaurantInfoScreen} options={{ title: "Restaurant Info" }} />
