@@ -5,8 +5,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { useAuth } from "../context/AuthContext";
 
 import LoginScreen from "../screens/auth/LoginScreen";
-/*
 import RegisterScreen from "../screens/auth/RegisterScreen";
+/*
+
 import HomeScreen from "../screens/main/HomeScreen";
 import ItemDetailsScreen from "../screens/main/ItemDetailsScreen";
 import CartScreen from "../screens/main/CartScreen";
@@ -56,7 +57,7 @@ function AuthStack() {
   return (
     <AuthStackNav.Navigator>
       <AuthStackNav.Screen name="Login" component={LoginScreen} />
-      {/*<AuthStackNav.Screen name="Register" component={RegisterScreen} />*/}
+      <AuthStackNav.Screen name="Register" component={RegisterScreen} />
     </AuthStackNav.Navigator>
   );
 }
