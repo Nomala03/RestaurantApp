@@ -11,10 +11,10 @@ import ItemDetailsScreen from "../screens/main/ItemDetailsScreen";
 import CartScreen from "../screens/main/CartScreen";
 import EditCartItemScreen from "../screens/main/EditCartItemScreen";
 import CheckoutScreen from "../screens/main/CheckoutScreen";
-
+import OrdersScreen from "../screens/main/OrdersScreen";
 
 /*
-import OrdersScreen from "../screens/main/OrdersScreen";
+
 import ProfileScreen from "../screens/main/ProfileScreen";
 import AdminLoginScreen from "../screens/admin/AdminLoginScreen";
 import AdminDashboardScreen from "../screens/admin/AdminDashboardScreen";
@@ -46,8 +46,9 @@ function MainTabs() {
     <Tabs.Navigator screenOptions={{ headerShown: false }}>
       <Tabs.Screen name="Home" component={HomeScreen} />
       <Tabs.Screen name="Cart" component={CartScreen} />
-      {/*
       <Tabs.Screen name="Orders" component={OrdersScreen} />
+
+      {/*
       <Tabs.Screen name="Profile" component={ProfileScreen} />*/}
     </Tabs.Navigator>
   );
