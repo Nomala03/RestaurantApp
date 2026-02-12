@@ -4,10 +4,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { useAuth } from "../context/AuthContext";
 
-/*
 import LoginScreen from "../screens/auth/LoginScreen";
+/*
 import RegisterScreen from "../screens/auth/RegisterScreen";
-
 import HomeScreen from "../screens/main/HomeScreen";
 import ItemDetailsScreen from "../screens/main/ItemDetailsScreen";
 import CartScreen from "../screens/main/CartScreen";
@@ -21,7 +20,7 @@ import AdminDashboardScreen from "../screens/admin/AdminDashboardScreen";
 import ManageFoodScreen from "../screens/admin/ManageFoodScreen";
 import RestaurantInfoScreen from "../screens/admin/RestaurantInfoScreen";
 import OrderHistoryScreen from "../screens/admin/OrderHistoryScreen";
-
+*/
 export type RootStackParamList = {
   Auth: undefined;
   Main: undefined;
@@ -41,7 +40,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const Tabs = createBottomTabNavigator();
 const AuthStackNav = createNativeStackNavigator();
 
-function MainTabs() {
+/*function MainTabs() {
   return (
     <Tabs.Navigator screenOptions={{ headerShown: false }}>
       <Tabs.Screen name="Home" component={HomeScreen} />
@@ -52,15 +51,15 @@ function MainTabs() {
   );
 }
 
+*/
 function AuthStack() {
   return (
     <AuthStackNav.Navigator>
       <AuthStackNav.Screen name="Login" component={LoginScreen} />
-      <AuthStackNav.Screen name="Register" component={RegisterScreen} />
+      {/*<AuthStackNav.Screen name="Register" component={RegisterScreen} />*/}
     </AuthStackNav.Navigator>
   );
 }
-
 export default function AppNavigator() {
   const { user, loading } = useAuth();
 
@@ -75,7 +74,7 @@ export default function AppNavigator() {
           <Stack.Screen name="Main" component={MainTabs} options={{ headerShown: false }} />
         )}
 
-        <Stack.Screen name="ItemDetails" component={ItemDetailsScreen} options={{ title: "View Item" }} />
+       {/* <Stack.Screen name="ItemDetails" component={ItemDetailsScreen} options={{ title: "View Item" }} />
         <Stack.Screen name="EditCartItem" component={EditCartItemScreen} options={{ title: "Edit Item" }} />
         <Stack.Screen name="Checkout" component={CheckoutScreen} options={{ title: "Checkout" }} />
 
@@ -83,10 +82,10 @@ export default function AppNavigator() {
         <Stack.Screen name="Admin" component={AdminDashboardScreen} options={{ title: "Admin Dashboard" }} />
         <Stack.Screen name="ManageFood" component={ManageFoodScreen} options={{ title: "Manage Food" }} />
         <Stack.Screen name="RestaurantInfo" component={RestaurantInfoScreen} options={{ title: "Restaurant Info" }} />
-        <Stack.Screen name="OrderHistory" component={OrderHistoryScreen} options={{ title: "Order History" }} />
+        <Stack.Screen name="OrderHistory" component={OrderHistoryScreen} options={{ title: "Order History" }} />*/}
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
-*/  
+ 
+  
