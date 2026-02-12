@@ -15,11 +15,10 @@ import OrdersScreen from "../screens/main/OrdersScreen";
 import ProfileScreen from "../screens/main/ProfileScreen";
 import AdminLoginScreen from "../screens/admin/AdminLoginScreen";
 import AdminDashboardScreen from "../screens/admin/AdminDashboardScreen";
+import RestaurantInfoScreen from "../screens/admin/RestaurantInfoScreen";
 
 /*
-
 import ManageFoodScreen from "../screens/admin/ManageFoodScreen";
-import RestaurantInfoScreen from "../screens/admin/RestaurantInfoScreen";
 import OrderHistoryScreen from "../screens/admin/OrderHistoryScreen";
 */
 export type RootStackParamList = {
@@ -90,10 +89,10 @@ export default function AppNavigator() {
         <Stack.Screen name="Checkout" component={CheckoutScreen} options={{ title: "Checkout" }} />
 <Stack.Screen name="AdminAuth" component={AdminLoginScreen} options={{ title: "Admin Login" }} />
      <Stack.Screen name="Admin" component={AdminDashboardScreen} options={{ title: "Admin Dashboard" }} />    
-     
+     <Stack.Screen name="RestaurantInfo" component={RestaurantInfoScreen} options={{ title: "Restaurant Info" }} />
      {/* 
         <Stack.Screen name="ManageFood" component={ManageFoodScreen} options={{ title: "Manage Food" }} />
-        <Stack.Screen name="RestaurantInfo" component={RestaurantInfoScreen} options={{ title: "Restaurant Info" }} />
+        
         <Stack.Screen name="OrderHistory" component={OrderHistoryScreen} options={{ title: "Order History" }} />*/}
       </Stack.Navigator>
     </NavigationContainer>
