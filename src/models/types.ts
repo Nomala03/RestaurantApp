@@ -1,3 +1,5 @@
+import { ImageSourcePropType } from "react-native";
+
 export type UID = string;
 
 export type Card = {
@@ -45,7 +47,7 @@ export type MenuItem = {
   name: string;
   description: string;
   basePrice: number;
-  imageUrl: string;
+  image: ImageSourcePropType;
   includedChoiceGroups: IncludedChoiceGroup[]; // sides/drink included
   extras: ExtraOption[];                       // add-on extras
   removableIngredients: string[];              // user can remove

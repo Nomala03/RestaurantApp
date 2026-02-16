@@ -74,7 +74,7 @@ export default function RegisterScreen() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: theme.colors.bg },
-  title: { color: theme.colors.text, fontSize: 28, fontWeight: "900" },
+  title: { color: theme.colors.text, fontSize: 28, fontWeight: "700" },
   subtitle: { color: theme.colors.muted, marginBottom: 18, marginTop: 6 },
   section: { color: theme.colors.text, marginTop: 10, marginBottom: 8, fontWeight: "800" },
   input: {

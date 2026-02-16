@@ -2,7 +2,7 @@ import { getJSON, setJSON } from "./storage";
 import { MenuItem } from "../models/types";
 import { seedMenu } from "../data/seedMenu";
 
-const MENU_KEY = "MENU_ITEMS_V1";
+const MENU_KEY = "MENU_ITEMS_V3";
 
 export async function ensureMenuSeeded() {
   const current = await getJSON<MenuItem[]>(MENU_KEY, []);

@@ -38,6 +38,7 @@ export default function AppButton({
 const styles = StyleSheet.create({
   btn: {
     paddingVertical: 12,
+    marginTop: 8,
     borderRadius: theme.radius.md,
     alignItems: "center",
     justifyContent: "center",

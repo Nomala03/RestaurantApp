@@ -61,7 +61,7 @@ export default function LoginScreen({ navigation }: Props) {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: theme.colors.bg, padding: 18, justifyContent: "center" },
-  title: { color: theme.colors.text, fontSize: 32, fontWeight: "900" },
+  title: { color: theme.colors.text, fontSize: 32, fontWeight: "700" },
   subtitle: { color: theme.colors.muted, marginBottom: 18, marginTop: 6 },
   input: {
     backgroundColor: theme.colors.card,

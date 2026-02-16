@@ -82,7 +82,7 @@ export default function ItemDetailsScreen({ route, navigation }: any) {
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={{ padding: 16 }}>
-      <Image source={{ uri: menuItem.imageUrl }} style={styles.hero} />
+      <Image source={ menuItem.image } style={styles.hero} />
       <Text style={styles.title}>{menuItem.name}</Text>
       <Text style={styles.desc}>{menuItem.description}</Text>
 
