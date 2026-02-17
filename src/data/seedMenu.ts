@@ -1,16 +1,16 @@
 import { MenuItem } from "../models/types";
+import { images } from "../assets/images";
 
 export const seedMenu: MenuItem[] = [
-  // =========================
   // STARTERS (ANTIPASTI)
-  // =========================
+ 
   {
     id: "st1",
     category: "Starters",
     name: "Bruschetta Classica",
     description: "Toasted ciabatta topped with tomatoes, basil, olive oil, and garlic.",
     basePrice: 65,
-    image: require("../../assets/menu/bruschetta.jpg"),
+    image: images.bruschetta,
     includedChoiceGroups: [],
     extras: [
       { id: "st1e1", name: "Extra Balsamic Glaze", price: 6 },
@@ -25,7 +25,7 @@ export const seedMenu: MenuItem[] = [
     name: "Caprese Salad",
     description: "Fresh mozzarella, vine tomatoes, basil, olive oil, balsamic glaze.",
     basePrice: 75,
-    image: require("../../assets/menu/caprese.jpg"),
+    image: images.caprese,
     includedChoiceGroups: [],
     extras: [
       { id: "st2e1", name: "Extra Mozzarella", price: 18 },
@@ -40,7 +40,7 @@ export const seedMenu: MenuItem[] = [
     name: "Arancini",
     description: "Golden fried risotto balls stuffed with mozzarella, served with marinara.",
     basePrice: 85,
-    image: require("../../assets/menu/arancini.jpg"),
+    image: images.arancini,
     includedChoiceGroups: [
       {
         id: "st3g1",
@@ -68,7 +68,7 @@ export const seedMenu: MenuItem[] = [
     name: "Creamy Alfredo Pasta",
     description: "Fettuccine, parmesan, cream, garlic, herbs.",
     basePrice: 110,
-    image: require("../../assets/menu/alfredo.jpg"),
+    image: images.alfredo,
     includedChoiceGroups: [
       {
         id: "m1g1",
@@ -103,7 +103,7 @@ export const seedMenu: MenuItem[] = [
     name: "Spaghetti Bolognese",
     description: "Slow-cooked beef ragu, tomatoes, garlic, Italian herbs.",
     basePrice: 120,
-    image: require("../../assets/menu/bolognese.jpg"),
+    image: images.bolognese,
     includedChoiceGroups: [
       {
         id: "m2g1",
@@ -128,7 +128,7 @@ export const seedMenu: MenuItem[] = [
     name: "Seafood Risotto",
     description: "Creamy arborio rice with prawns, calamari, herbs, lemon.",
     basePrice: 165,
-    image: require("../../assets/menu/seafood_risotto.jpg"),
+    image: images.seafood_risotto,
     includedChoiceGroups: [
       {
         id: "m3g1",
@@ -155,7 +155,7 @@ export const seedMenu: MenuItem[] = [
     name: "Margherita Pizza",
     description: "Wood-fired pizza with tomato sauce, mozzarella, fresh basil.",
     basePrice: 95,
-    image: require("../../assets/menu/margherita.jpg"),
+    image: images.margherita,
     includedChoiceGroups: [
       {
         id: "pz1g1",
@@ -181,7 +181,7 @@ export const seedMenu: MenuItem[] = [
     name: "Diavola Pizza",
     description: "Wood-fired pizza with mozzarella, spicy salami, chilli flakes.",
     basePrice: 125,
-    image: require("../../assets/menu/diavola.jpg"),
+    image: images.diavola,
     includedChoiceGroups: [
       {
         id: "pz2g1",
@@ -206,7 +206,7 @@ export const seedMenu: MenuItem[] = [
     name: "Quattro Formaggi Pizza",
     description: "Wood-fired pizza with mozzarella, parmesan, gorgonzola, ricotta.",
     basePrice: 135,
-    image: require("../../assets/menu/quattro_formaggi.jpg"),
+    image: images.quattro_formaggi,
     includedChoiceGroups: [
       {
         id: "pz3g1",
@@ -225,16 +225,14 @@ export const seedMenu: MenuItem[] = [
     removableIngredients: ["Gorgonzola", "Parmesan"],
   },
 
-  // =========================
   // BURGERS
-  // =========================
   {
     id: "b1",
     category: "Burgers",
     name: "Italian Beef Burger",
     description: "Beef patty, tomato, basil mayo, mozzarella, pickles.",
     basePrice: 115,
-    image: require("../../assets/menu/italian_burger.jpg"),
+    image: images.italian_burger,
     includedChoiceGroups: [
       {
         id: "b1g1",
@@ -266,16 +264,15 @@ export const seedMenu: MenuItem[] = [
     removableIngredients: ["Pickles", "Cheese", "Basil mayo", "Tomato"],
   },
 
-  // =========================
   // DESSERTS
-  // =========================
+ 
   {
     id: "ds1",
     category: "Desserts",
     name: "Tiramisu",
     description: "Coffee-soaked sponge, mascarpone cream, cocoa dusting.",
     basePrice: 75,
-    image: require("../../assets/menu/tiramisu.jpg"),
+    image: images.tiramisu,
     includedChoiceGroups: [],
     extras: [
       { id: "ds1e1", name: "Extra Cocoa Dusting", price: 5 },
@@ -289,7 +286,7 @@ export const seedMenu: MenuItem[] = [
     name: "Panna Cotta",
     description: "Silky vanilla panna cotta served with berry compote.",
     basePrice: 70,
-    image: require("../../assets/menu/panna_cotta.jpg"),
+    image: images.panna_cotta,
     includedChoiceGroups: [
       {
         id: "ds2g1",
@@ -313,7 +310,7 @@ export const seedMenu: MenuItem[] = [
     name: "Cannoli",
     description: "Crisp pastry tubes filled with sweet ricotta cream.",
     basePrice: 65,
-    image: require("../../assets/menu/cannoli.jpg"),
+    image: images.cannoli,
     includedChoiceGroups: [],
     extras: [
       { id: "ds3e1", name: "Chocolate Chips", price: 10 },
@@ -331,7 +328,7 @@ export const seedMenu: MenuItem[] = [
     name: "Soft Drink",
     description: "Coke, Coke Zero, Fanta, Sprite (chilled).",
     basePrice: 25,
-    image: require("../../assets/menu/soft_drink.jpg"),
+    image: images.soft_drink,
     includedChoiceGroups: [
       {
         id: "bv1g1",
@@ -366,7 +363,7 @@ export const seedMenu: MenuItem[] = [
     name: "Italian Soda",
     description: "Sparkling Italian-style soda. Blood Orange or Lemon & Mint.",
     basePrice: 35,
-    image: require("../../assets/menu/italian_soda.jpg"),
+    image: images.italian_soda,
     includedChoiceGroups: [
       {
         id: "bv2g1",
@@ -390,7 +387,7 @@ export const seedMenu: MenuItem[] = [
     name: "Coffee",
     description: "Espresso, Cappuccino, or Latte (freshly brewed).",
     basePrice: 35,
-    image: require("../../assets/menu/coffee.jpg"),
+    image: images.coffee,
     includedChoiceGroups: [
       {
         id: "bv3g1",
@@ -429,7 +426,7 @@ export const seedMenu: MenuItem[] = [
     name: "Italian Sunset",
     description: "Citrus, grenadine, sparkling fizz (non-alcoholic).",
     basePrice: 55,
-    image: require("../../assets/menu/italian_sunset.jpg"),
+    image: images.italian_sunset,
     includedChoiceGroups: [
       {
         id: "mk1g1",
@@ -454,7 +451,7 @@ export const seedMenu: MenuItem[] = [
     name: "Amalfi Cooler",
     description: "Lemon, mint, cucumber, sparkling water (non-alcoholic).",
     basePrice: 55,
-    image: require("../../assets/menu/amalfi_cooler.jpg"),
+    image: images.amalfi_cooler,
     includedChoiceGroups: [
       {
         id: "mk2g1",
